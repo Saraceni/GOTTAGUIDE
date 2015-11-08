@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/rio_background"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/activity_confirmation_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Um guia aceitou seu roteiro!"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="center"/>
+
+    <project.hackaton.com.placefinder.views.RoundedImageView
+        android:id="@+id/activity_confirmation_rounded"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/activity_confirmation_label"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/guide"
+        android:scaleType="fitCenter"
+        android:cropToPadding="true"/>
+
+    <TextView
+        android:id="@+id/activity_confirmation_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_rounded"
+        android:layout_margin="5dp"
+        android:text="Nome: Klaus Leafar"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/activity_confirmation_roteiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_name"
+        android:layout_margin="5dp"
+        android:text="Roteiro:"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/activity_confirmation_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_roteiro"
+        android:layout_margin="5dp"
+        android:text="Data:"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/activity_confirmation_reputacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_data"
+        android:layout_margin="5dp"
+        android:text="Reputacao: Otima"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="left"/>
+
+    <View
+        android:id="@+id/activity_confirmation_divider"
+        android:layout_below="@id/activity_confirmation_reputacao"
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/activity_confirmation_avalie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_divider"
+        android:layout_margin="5dp"
+        android:text="Avalie seu guia ao final do roteiro!"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/start1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_avalie"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/star_off"/>
+
+    <ImageView
+        android:id="@+id/start2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_avalie"
+        android:layout_toRightOf="@id/start1"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/star_off"/>
+
+    <ImageView
+        android:id="@+id/start3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_avalie"
+        android:layout_toRightOf="@id/start2"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/star_off"/>
+
+    <ImageView
+        android:id="@+id/start4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_avalie"
+        android:layout_toLeftOf="@id/start1"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/star_off"/>
+
+    <ImageView
+        android:id="@+id/start5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmation_avalie"
+        android:layout_toLeftOf="@id/start4"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/star_off"/>
+
+    <Button
+        android:id="@+id/activity_confirmation_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:text="Pronto!"/>
+
+
+
+</RelativeLayout>

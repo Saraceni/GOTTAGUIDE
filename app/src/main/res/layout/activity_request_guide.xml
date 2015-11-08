@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/activity_request_guide_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destinatinon"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="center"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/activity_request_guide_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_request_guide_destination"
+        android:text="11/12/15"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/activity_request_guide_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_request_guide_date"
+        android:text="13:00"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/activity_request_guide_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_request_guide_time"
+        android:background="@drawable/rounded_corners"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="Mudar Data"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/activity_request_guide_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:text="Confirmar"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
